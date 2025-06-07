@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
   color: white;
   background: url("./images/Object.png") no-repeat center center fixed;
   background-size: cover;
@@ -58,6 +59,8 @@ body {
 .banner-content {
   max-width: 800px;
   margin: 0 auto;
+  position: absolute;
+  top: 70px;
 }
 
 .banner-title {
@@ -89,4 +92,380 @@ body {
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
+}
+/* Learn from Pros Section */
+.learn-pros {
+  padding: 80px 20px;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #c271ff;
+}
+
+.pros-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pro-card {
+  max-width: 180px;
+}
+
+.pro-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #c271ff;
+}
+
+.pro-name {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.pro-title {
+  font-size: 0.9rem;
+  color: #d3d3d3;
+  line-height: 1.5;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: #c271ff;
+  color: white;
+  padding: 60px 20px;
+}
+
+.testimonial-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonial-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+  text-align: left;
+}
+
+.testimonial-quote {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.testimonial-role {
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+}
+
+/* Tutorials Section */
+.tutorials-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  color: #071629;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tutorial-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-media {
+  position: relative;
+}
+
+.card-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c271ff;
+  font-size: 20px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin: 15px 20px 10px;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 20px 15px;
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 0.8rem;
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.stars {
+  color: #c271ff;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 0.7rem;
+  color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Membership Section */
+.membership-section {
+  background-color: #071629;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(57%) sepia(90%) saturate(427%)
+    hue-rotate(218deg) brightness(95%) contrast(96%);
+}
+
+.benefit-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.benefit-text {
+  font-size: 0.9rem;
+  color: #d3d3d3;
+  line-height: 1.5;
+}
+
+.btn-register {
+  background: linear-gradient(to right, #c271ff, #d885ff);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .benefit-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* FAQ Section */
+.faq {
+  background: #fff;
+  color: #071629;
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.faq h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-logo img {
+  height: 30px;
+}
+
+.footer-social img {
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.7;
 }
