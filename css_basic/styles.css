@@ -24,21 +24,73 @@ aside {
   padding: 1rem;
 }
 
-header,
-footer {
-  background-color: #f0f0f0;
-  padding: 1rem;
+.logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+header {
+  background-color: #222;
+  color: white;
 }
 
 header ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+header li {
+  margin-right: 1rem;
 }
 
 header a {
+  color: white;
   text-decoration: none;
-  color: #333;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+
+article {
+  background-color: #fdfdfd;
+  border-right: 1px solid #ddd;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+article table th,
+article table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+article img {
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+aside {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-left: 1px solid #ccc;
+  font-style: italic;
 }
